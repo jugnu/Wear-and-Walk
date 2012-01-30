@@ -1,0 +1,19 @@
+<br /><br />
+<div id="view-content">
+    <p>View script for controller <b>MainPages</b> and script/action name <b>products</b></p>
+</div>
+<div>
+    <div>
+        <div>name</div>
+        <div>model</div>
+        <div>amount</div>
+    </div>
+    <div>
+        <?php foreach ($this->products as $key=>$value) {?>
+        <div><?php echo $value['company_name'];?></div>
+        <div><?php echo $value['model_no'];?></div>
+        <div><?php echo $value['amount'];?></div>
+            <?php } ?>
+    </div>
+
+</div>
